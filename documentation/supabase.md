@@ -2,6 +2,25 @@
 
 This documentation covers the `UserService`, `Database`, and `Storage` classes from the `supabase.ts` file, which provide interfaces for interacting with Supabase functionalities.
 
+## IMPORTANT: 
+
+**Auth**: Before using authentication providers, ensure they are enabled in your Supabase Authentication settings. Configure your site URL and redirect URLs in the URL Configuration section.
+
+**Storage**: If you plan to use public URLs, make sure your storage buckets are set to public. However, it's recommended to apply specific access policies for security.
+
+**Database**: As always, ensure that your table columns align with the data structure you intend to store.
+
+[Supabase Javascript](https://supabase.com/docs/reference/javascript/introduction)
+
+
+### From my own setup:
+
+![Alt text](./images/shot-1.png)
+![Alt text](./images/shot-2.png)
+![Alt text](./images/shot-3.png)
+
+
+
 ## Table of Contents
 1. [UserService](#userservice)
 2. [Database](#database)

@@ -78,6 +78,8 @@ body, html{
   color: var(--sl-brand-color);
 }
 
+
+
 /* RESETS */
 .p-button .p-button-label{
   font-weight: var(--sl-button-weight);

@@ -1,9 +1,7 @@
+import { baseUrl } from './config'
+
 // API access to the Node.js server
 const netMethods = async (payload: Record<string, any>, route: string) => {
-  const baseUrl = window.location.origin.includes('localhost')
-    ? 'http://localhost:8888/api'
-    : 'https://bravo.anthonycharles.work/api'; //change this to your server URL
-
   const url = `${baseUrl}/${route}`;  
 
   try {

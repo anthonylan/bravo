@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import { baseUrl } from './config'
 
 // Initialize Supabase client
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
@@ -90,7 +91,7 @@ class User {
     static async handleOAuth(provider: any): Promise<{ error: string | null }> {
         const { error } = await supabase.auth.signInWithOAuth({
             provider,
-            options: { redirectTo: `/api/auth` },
+            options: { redirectTo: `${baseUrl}/auth` },
         });
 
         if (error) {

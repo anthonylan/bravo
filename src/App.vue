@@ -41,6 +41,13 @@ main:not(.admin-main){
         margin: 40px auto;
     }
 }
+.highlight{
+  color: var(--sl-brand-color);
+}
+.underline{
+  text-decoration: underline;
+}
+
 .h-container{
   max-width: var(--sl-container-width);
   margin: 0 auto;
@@ -59,7 +66,9 @@ ul{
     list-style: none;
     padding: 0px;
 }
-
+p{
+  line-height: 1.4;
+}
 // admin styles
 main.admin-main{
     max-width: 1200px;

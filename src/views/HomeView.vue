@@ -113,24 +113,18 @@ main{
   padding: 30px 10px;
 }
 
+
+section{
+  padding: 80px 0;
+}
+
 p{
   font-size: 1.3rem;
-  line-height: 1.4;
   &.tiny{
     font-size: 1rem;
     font-weight: 400;
   }
 }
-section{
-  padding: 80px 0;
-}
-.highlight{
-  color: var(--sl-brand-color);
-}
-.underline{
-  text-decoration: underline;
-}
-
 
 .hero{
   padding: 130px 0;

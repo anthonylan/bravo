@@ -45,7 +45,7 @@ app.get('/api/auth', async (req, res) => {
       await supabase.auth.exchangeCodeForSession(code)
     }
   
-    res.redirect(303, `/todo${next.slice(1)}`)
+    res.redirect(303, `${url}/todo${next.slice(1)}`)
   });
 
 
