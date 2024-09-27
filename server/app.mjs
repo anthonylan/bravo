@@ -16,7 +16,6 @@ app.use(cors({
 }));
 
 
-
 app.get('/api/hello', (req, res) => {
   res.json({ message: 'Hello from Netlify Function + Express!' });
 });
