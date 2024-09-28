@@ -225,7 +225,7 @@ h1, h2, p{
 
 .auth-header{
     position: absolute;
-    left: 20px; top: 28px;
+    left: 20px; top: 25px;
     min-width: 200px;
 }
     
@@ -241,4 +241,9 @@ h1, h2, p{
     }
 }
 
+@media (max-width:700px) {
+    .auth-header{
+        position: relative;
+    }
+}
 </style>
