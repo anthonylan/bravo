@@ -179,7 +179,7 @@ const faqs = [
     answer: `You gain access to Bravo's GitHub repository, which contains well-documented and regularly updated boilerplate source code to jumpstart your SaaS project.`
   },
   { 
-    question: `What's tech stack?`,
+    question: `What tech stack does it use?`,
     answer: `The project uses TypeScript for the client-side and Express.js on the server. As demonstrated, it currently employs PrimeVue as the UI library`
   },
   { 
