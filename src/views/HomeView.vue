@@ -216,7 +216,7 @@ pre{
     }
     .hero-text{
       h1{
-        font-size: 2.8rem;
+        font-size: 2.6rem;
       }
     }
   }

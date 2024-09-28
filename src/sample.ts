@@ -165,7 +165,7 @@ const testimonies = [
     comment: `A true developer. Kept me up to date and informed the entire time. Did amazing work! I requested a truly complicated website, and he delivered. Couldn’t even happier with everything, I am truly grateful!!!`,
     author: {
       name: 'Felix Jarred', 
-      role: 'Enterpreneur',
+      role: 'Entrepreneur',
       avatar: 'https://images.pexels.com/photos/819530/pexels-photo-819530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     }
    },
