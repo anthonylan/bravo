@@ -64,7 +64,6 @@ const getKit = () => window.open(priceConfig.url)
       </div>
     </section>
 
-
     <Features />
 
     <Reviews />
