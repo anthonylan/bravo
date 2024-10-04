@@ -23,7 +23,7 @@ const getKit = () => window.open(priceConfig.url)
 
 <template>
   <Navbar />
-   
+
   <main>
     <div class="hero">
       <div class="hero-text h-center h-container">
@@ -56,7 +56,7 @@ const getKit = () => window.open(priceConfig.url)
         </div>
         <div class="profile-bio">
           <h3>Hey, it's Anthony 👋</h3>
-          <p class="tiny">In 2019,  <a href="https://www.fiverr.com/s/pdy8KAy" target="_blank">I committed to focusing solely on SaaS projects.</a> Over time, I noticed a pattern: many tasks, like user authentication, payment integration, and database setup, were repetitive across different projects. To streamline the process, I created reusable components that could be quickly adapted to any project.</p>
+          <p class="tiny">In 2019, I committed to focusing solely on SaaS projects. Over time, I noticed a pattern: many tasks, like user authentication, payment integration, and database setup, were repetitive across different projects. To streamline the process, I created reusable components that could be quickly adapted to any project.</p>
           <p class="tiny">That's what <strong>Bravo</strong> is all about—a SaaS starter kit that helps developers and indie makers save time and focus on what matters most: building the product's core features.</p>
         </div>
       </div>
@@ -64,7 +64,7 @@ const getKit = () => window.open(priceConfig.url)
       </div>
     </section>
 
- 
+
     <Features />
 
     <Reviews />
@@ -72,7 +72,7 @@ const getKit = () => window.open(priceConfig.url)
     <Faq />
 
     <Footer />
-   
+
   </main>
 
 
@@ -129,7 +129,7 @@ p{
 .hero{
   padding: 130px 0;
   .hero-text{
- 
+
     h1{
       font-size: 3.6rem;
     }
