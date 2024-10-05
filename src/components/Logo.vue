@@ -1,7 +1,7 @@
 <template>
     <img src="@/assets/images/logo-dark.svg" class="logo-dark" alt="">
     <img src="@/assets/images/logo-light.svg" class="logo-light" alt="">
-    <span class="h-header">ravo</span> <small class="h-text">in collab w/ Temaly</small>
+    <span class="h-header">ravo</span> 
 </template>
 
 
