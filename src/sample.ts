@@ -299,7 +299,7 @@ const items = await StripeService.getSubscriptions('cus_Qu6isymffvdoGd')
 
 const priceConfig = {
   url: import.meta.env.VITE_PAY,
-  cost: '$499'
+  cost: '$299'
 }
 
 
