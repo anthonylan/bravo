@@ -77,8 +77,6 @@ const portalExtender = async (): Promise<void> => {
 
   const response = await StripeService.getPortalLink(customerId.value);
   states.ptLoading = false
-
-  console.log(response, 'RES');
   
 
   if (response.error) {

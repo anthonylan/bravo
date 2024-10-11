@@ -64,7 +64,7 @@ onMounted(async () => {
   if (!session?.user) return router.push('/login');
 
   const { user_metadata: meta } = session?.user
-  userRef.value = {...session.user, user_metadata: { ...meta, customer_name: meta?.customer_name || meta?.name || meta?.full_name  }} || {};
+  userRef.value = {...session.user, user_metadata: { ...meta, customer_name: meta?.customer_name || meta?.name || meta?.full_name  }};
 });
 
 
