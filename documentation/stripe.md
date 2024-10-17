@@ -11,36 +11,31 @@ The `StripeService` class provides a set of static methods to interact with Stri
 
 ## Methods
 
-### getItemsByPriceId
+### newCustomer
 
-Find a valid subscription or one-time purchase based on a price ID.
-
-```typescript
-static getItemsByPriceId(priceId: string, list: any): any
-```
+Create a new Stripe customer for a user.
 
 #### Parameters:
-- `priceId` (string): The ID of the price to check.
-- `list` (any): An object containing `checkouts` and `subscriptionItems`.
+- `email` (string): The user's email.
+- `name` (string): The user's name.
 
 #### Returns:
-- A subscription item, one-time checkout, or `null` if not found.
+- A Promise that resolves to the Stripe customer ID or an error message.
 
 #### Usage:
 ```typescript
-const item = StripeService.getItemsByPriceId('price_123', {
-  checkouts: [...],
-  subscriptionItems: [...]
-});
+const result = await StripeService.newCustomer('user@example.com', 'John Doe');
+if (result.error) {
+  console.error(result.error);
+} else {
+  console.log('New customer ID:', result.customer_id);
+}
 ```
+
 
 ### getPortalLink
 
 Fetch the Stripe customer portal link for a logged-in user.
-
-```typescript
-static async getPortalLink(customerId: string): Promise<any>
-```
 
 #### Parameters:
 - `customerId` (string): The ID of the customer.
@@ -62,14 +57,6 @@ if (result.error) {
 ### getCheckoutLink
 
 Create a checkout link for a product or subscription.
-
-```typescript
-static async getCheckoutLink(config: {
-  customerId: string,
-  priceId: string,
-  isOneOff: boolean
-}): Promise<any>
-```
 
 #### Parameters:
 - `config` (object):
@@ -95,38 +82,10 @@ if (result.error) {
 }
 ```
 
-### newCustomer
-
-Create a new Stripe customer for a user.
-
-```typescript
-static async newCustomer(email: string, name: string): Promise<any>
-```
-
-#### Parameters:
-- `email` (string): The user's email.
-- `name` (string): The user's name.
-
-#### Returns:
-- A Promise that resolves to the Stripe customer ID or an error message.
-
-#### Usage:
-```typescript
-const result = await StripeService.newCustomer('user@example.com', 'John Doe');
-if (result.error) {
-  console.error(result.error);
-} else {
-  console.log('New customer ID:', result.customer_id);
-}
-```
 
 ### getSubscriptions
 
 Fetch the active subscriptions or completed checkouts for a logged-in user.
-
-```typescript
-static async getSubscriptions(customerId: string): Promise<any>
-```
 
 #### Parameters:
 - `customerId` (string): The ID of the customer.
@@ -143,6 +102,26 @@ if (result.error) {
   console.log('Subscriptions:', result.subscriptionItems);
   console.log('Checkouts:', result.checkouts);
 }
+```
+
+
+### getItemsByPriceId
+
+Find a valid subscription or one-time purchase based on a price ID.
+
+#### Parameters:
+- `priceId` (string): The ID of the price to check.
+- `list` (any): An object containing `checkouts` and `subscriptionItems`.
+
+#### Returns:
+- A subscription item, one-time checkout, or `null` if not found.
+
+#### Usage:
+```typescript
+const item = StripeService.getItemsByPriceId('price_123', {
+  checkouts: [...],
+  subscriptionItems: [...]
+});
 ```
 
 ## Error Handling
