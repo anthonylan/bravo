@@ -31,7 +31,7 @@ The `UserService` class provides methods for managing user-related operations.
 
 ### Methods
 
-#### User.updateUserMeta: Update user metadata in Supabase.
+#### updateUserMeta: Update user metadata in Supabase.
 #### Usage:
 ```typescript
 const result = await User.updateUserMeta({ birth_day: '1995/03/12', custom_name: 'John Doe' });
