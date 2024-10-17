@@ -3,9 +3,9 @@
       <div class="h-container h-grid">
         <div class="footer-cta">
           
-          <h1 class="h-header h-title-2">{{ priceConfig.cost }}<small class="h-text"> USD</small></h1>
-          <Button label="Get Bravo" fluid @click="getKit" />
-          <p class="h-text tiny">Pay once. Build unlimited projects!</p>
+          <h1 class="h-header h-title-2">Get Bravo</h1>
+          <Button :label="priceConfig.cost" fluid @click="getKit" />
+          <p class="h-text tiny">Fully open-source with regular updates</p>
 
         </div>
         <div class="footer-links h-flex">

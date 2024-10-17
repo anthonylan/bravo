@@ -13,13 +13,6 @@ This documentation covers the `UserService`, `Database`, and `Storage` classes f
 [Supabase Javascript](https://supabase.com/docs/reference/javascript/introduction)
 
 
-### From my own setup:
-
-![Alt text](./images/shot-1.png)
-![Alt text](./images/shot-2.png)
-![Alt text](./images/shot-3.png)
-
-
 
 ## Table of Contents
 1. [UserService](#userservice)

@@ -22,7 +22,7 @@
                 <span class="h-header">{{ user.user_metadata?.customer_name }}</span>
                 <Avatar :image="avatarUrl(user)" shape="circle" /> 
             </div>
-            <RouterLink v-else to="/login">Try the demo</RouterLink>
+            <RouterLink v-else to="/login">Get started</RouterLink>
 
             <Popover ref="pop">
                 <div class="dropdown-links">

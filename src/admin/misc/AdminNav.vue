@@ -16,13 +16,13 @@ import Theme from '@/components/Theme.vue';
 
         </div>
         <div class="nav-links">
-            <h4>Menu</h4>
+            <h4>Admin Menu</h4>
             <RouterLink to="/admin/dashboard"><i class="pi pi-gauge"></i> Dashboard</RouterLink>
             <RouterLink to="/admin/users"><i class="pi pi-users"></i> Users</RouterLink>
             <RouterLink to="/admin/ui-components"><i class="pi pi-objects-column"></i> UI Components</RouterLink>
 
 
-            <h4 class="h-top md">Return</h4>
+            <h4 class="h-top md">User Menu</h4>
             <RouterLink to="/todo"><i class="pi pi-angle-left"></i> CRUD</RouterLink>
             <RouterLink to="/upload"><i class="pi pi-angle-left"></i> File upload</RouterLink>
             <RouterLink to="/pricing"><i class="pi pi-angle-left"></i> Pricing</RouterLink>

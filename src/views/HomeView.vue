@@ -27,11 +27,11 @@ const getKit = () => window.open(priceConfig.url)
   <main>
     <div class="hero">
       <div class="hero-text h-center h-container">
-        <h1 class="h-header"><span class="highlight">Supercharged</span> SaaS template: Vue + Node.js</h1>
-        <p class="h-text">A flexible, feature-rich, full-stack SaaS boilerplate that accelerates development and reduces costs.</p>
+        <h1 class="h-header">The <span class="highlight">ultimate</span> SaaS kit for minimalists</h1>
+        <p class="h-text">An open-source, simple-to-use Vue + NodeJS template that speeds up your project development</p>
       </div>
       <div class="hero-cta h-flex h-top md">
-        <Button :label="`Get Bravo - ${priceConfig.cost} one-time`" @click="getKit" />
+        <Button :label="priceConfig.cost" icon="pi pi-github" @click="getKit" />
         <Button label="Try the demo" severity="secondary" @click="router.push('/login')" />
       </div>
     </div>
@@ -128,9 +128,8 @@ p{
 .hero{
   padding: 130px 0;
   .hero-text{
-
     h1{
-      font-size: 3.6rem;
+      font-size: 3.8rem;
     }
     p{
       max-width: 700px;

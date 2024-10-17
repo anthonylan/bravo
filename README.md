@@ -93,3 +93,17 @@ These documents provide in-depth explanations of each service's methods, paramet
 4. Start building your features using the provided services!
 
 If you have any questions or run into issues, please refer to the documentation or reach out to me.
+
+
+
+
+## ☕ Support My Work
+
+If you find this project helpful or you enjoy using it, consider buying me a coffee to keep me fueled ☕! Your support means a lot and helps me continue maintaining and improving this project.
+
+[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/d2OuR1c)
+
+Thank you for your support!
+
+
+

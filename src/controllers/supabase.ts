@@ -70,6 +70,33 @@ class User {
             return { data, error }
         }
 
+
+        // Fetch records from the specified table by date range.
+        static async fetchByRange(table: string, { key, value, range }: { key: string, value: string, range: [string, string] }): Promise<any> {
+            const [startDate, endDate] = range.map(date => new Date(date).getTime());
+        
+            const { data, error } = await supabase
+            .from(table)
+            .select('*')
+            .eq(key, value)
+            .gte('date', startDate)
+            .lte('date', endDate)
+            .order('date', { ascending: false });
+        
+            return { data, error };
+        }
+
+       // Single update a record in the specified table
+        static async update(table: string, { id, payload }: { id: number, payload: RecordData }): Promise<any> {
+            const { data, error } = await supabase
+            .from(table)
+            .update(payload)
+            .eq('id', id);
+        
+            return { data, error };
+        }
+  
+
       //@ Delete a record in the specified table by ID.
       static async delete(table: string, id: string): Promise<any> {
           const { data: deletedData, error } = await supabase

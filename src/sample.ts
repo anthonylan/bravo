@@ -175,21 +175,13 @@ const testimonies = [
 
 const faqs = [
   { 
-    question: 'What do I get exactly?',
-    answer: `You gain access to Bravo's GitHub repository, which contains well-documented and regularly updated boilerplate source code to jumpstart your SaaS project.`
-  },
-  { 
     question: `What tech stack does it use?`,
     answer: `The project uses TypeScript for the client-side and Express.js on the server. As demonstrated, it currently employs PrimeVue as the UI library`
   },
   { 
     question: 'Are there any cost associated?',
     answer: `Many hosting platforms, such as Netlify, offer free hosting for projects (both front-end and back-end), while Supabase provides a free tier. This allows you to launch your first app for $0/month..`
-  },
-  { 
-    question: 'Can I get a refund?',
-    answer: `After you've got access to the repo, Bravo is yours forever, so it can't be refunded.`
-  },
+  }
 ]
 
 
@@ -298,8 +290,8 @@ const items = await StripeService.getSubscriptions('cus_Qu6isymffvdoGd')
 
 
 const priceConfig = {
-  url: import.meta.env.VITE_PAY,
-  cost: '$299'
+  url: 'https://github.com/anthonylan/bravo',
+  cost: 'View the Repo'
 }
 
 

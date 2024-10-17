@@ -92,6 +92,10 @@
     
     <Toast />
 
+    <div class="switch">
+        <Theme />
+    </div>
+
     
     </template>
     
@@ -107,7 +111,7 @@
     import Toast from 'primevue/toast';
 
     import Logo from '@/components/Logo.vue';
-    
+    import Theme from '@/components/Theme.vue';
     
     import { useToast } from 'primevue/usetoast';
     import { Toaster } from '@/utils'
@@ -132,7 +136,7 @@
     
  const submit = async (provider: any): Promise<void> => {
     states.loading = true;
-    const welcomeUrl = 'welcome?q=waiting_verification';
+    const welcomeUrl = 'welcome';
 
     // Handle OAuth sign-in
     if (provider !== 'email') {
@@ -144,8 +148,8 @@
     const { error } = await Auth.handleEmailAuth(form, login.value, `${location.origin}/${welcomeUrl}`);
     if (error) return fsErrorExtend(error, 'Failed');
 
-    const success_url = login.value ? '/todo' : `/${welcomeUrl}`
-    router.push(success_url);
+    const success_url = login.value ? 'todo' : welcomeUrl
+    location.href = `${location.origin}/${success_url}`
 };
 
 

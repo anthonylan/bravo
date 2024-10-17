@@ -1,7 +1,7 @@
 <template>
      <section class="testimonies">
       <div class="h-container">
-        <h3 class="h-header">Bravo cuts costs, I earn retainers - win-win.</h3>
+        <h3 class="h-header">I use Bravo for my projects—here’s what clients say</h3>
 
         <div class="reviews h-grid h-top md">
           <div class="review" v-for="review in testimonies">

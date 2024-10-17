@@ -56,11 +56,7 @@ const waiting = ref(false);
 
 onMounted(async () => {
   const { data, error } = await supabase.auth.getSession();
-  const session = data?.session;
-  console.log(session);
-  
-
-  if (route.query?.q === 'waiting_verification' && !session) return waiting.value = true;
+  const session = data?.session;  
   if (!session?.user) return router.push('/login');
 
   const { user_metadata: meta } = session?.user
