@@ -49,11 +49,6 @@ const router = createRouter({
       name: 'Welcome',
       component: () => import('../views/WelcomeView.vue')
     },
-    {
-      path: '/legal/:id',
-      name: 'Lega;',
-      component: () => import('../views/LegalView.vue')
-    },
 
     // Admin Routes
     {

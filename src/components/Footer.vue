@@ -12,9 +12,9 @@
          <div class="wrap">
           <h4 class="h-text">LINKS</h4>
           <div class="links h-grid">
-            <RouterLink to="/legal/tos" class="h-text">Terms of services</RouterLink>
-            <RouterLink to="/legal/policy" class="h-text">Privacy policy</RouterLink>
+            <a href="https://buymeacoffee.com/d2our1c" target="_blank" class="h-text">Support me</a>
             <a href="https://github.com/anthonylan" target="_blank" class="h-text">Github</a>
+            <a href="https://x.com/antdgreatio" class="h-text">Twitter</a>
           </div>
          </div>
         </div>
