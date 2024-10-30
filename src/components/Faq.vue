@@ -4,7 +4,7 @@
         <div class="faq-header">
           <h2 class="h-header">Frequently asked questions </h2>
           <p class="h-text tiny">
-            Have another question? Contact me on <a href="https://instagram.com/tonia.dev" target="_blank" class="h-text underline">Instagram</a> or <a href="mailto:hello@anthonycharles.work" target="_blank" class="h-text underline">by email</a>.
+            Have another question? Contact me on <a href="https://instagram.com/codetonero" target="_blank" class="h-text underline">Instagram</a> or <a href="mailto:hello@anthonycharles.work" target="_blank" class="h-text underline">by email</a>.
           </p>
         </div>
         <div class="faq-wrapper">

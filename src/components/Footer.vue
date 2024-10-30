@@ -14,7 +14,7 @@
           <div class="links h-grid">
             <a href="https://buymeacoffee.com/d2our1c" target="_blank" class="h-text">Support me</a>
             <a href="https://github.com/anthonylan" target="_blank" class="h-text">Github</a>
-            <a href="https://x.com/antdgreatio" class="h-text">Twitter</a>
+            <a href="https://x.com/codetonero" class="h-text">Twitter</a>
           </div>
          </div>
         </div>
