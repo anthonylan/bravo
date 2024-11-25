@@ -6,7 +6,7 @@ import { createServerClient } from '@supabase/supabase-js'
 import Stripe from 'stripe';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-const url = process.env.MODE == 'dev' ? "http://localhost:5173" : 'https://bravo.anthonycharles.work' //set your production URL
+const url = process.env.MODE == 'dev' ? "http://localhost:5173" : 'https://bravo.indiebold.com' //set your production URL
 
 
 const app = express();
